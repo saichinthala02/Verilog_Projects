@@ -1,8 +1,8 @@
 //--> Implementation of Memory Test-Bench.
 `include "memory.v"
 module top;
-	parameter WIDTH = 12;
-	parameter DEPTH = 32;
+	parameter WIDTH = 8;
+	parameter DEPTH = 16;
 	parameter ADDR  = $clog2(DEPTH);
 
 	reg clk_i,rst_i,wr_rd_i,valid_i;
@@ -268,4 +268,5 @@ module top;
 		end
 	endtask
 endmodule
+
 
